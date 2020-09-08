@@ -1,0 +1,16 @@
+---------------GIT使用方法---------------------
+git add xxx.txt           上传文件
+git commit -m "注释"      提交文件并添加注释
+git push origin master    更新到GitHub上
+
+
+git remote add origin git@github.com：909437708 / Just-Do-It.git
+git clone git@github.com:909437708/gitskills.git  克隆仓库
+
+
+----------------------生成ssh key 步骤------------------------
+1.windows上，进入放项目的目录，右键选择 Git Bash Here 打开git命令行工具，输入以下命令
+	ssh-keygen -t rsa -C "这里是你的git上注册的邮箱"
+	例如： ssh-keygen -t rsa -C "xxx@xxx.com"
+2.执行此命令后，会提示输入密码，请勿输入密码，直接3次回车，表示上传代码时，不要密码，直接上传
+3.往c盘的相应目录查看生成的.ssh目录，在执行第2步的时候，把生成的目录放到了指定目录下 C:\Windows\System32\config\systemprofile\.ssh

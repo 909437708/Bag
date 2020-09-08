@@ -1,0 +1,6 @@
+1>:
+	print函数:（Python3中print为一个函数，必须用括号括起来；Python2中print为class）
+2>:
+   通过input()解析用户的输入：（Python3中input得到的为str；Python2的input的到的为int型，Python2的raw_input得到的为str类型）统一一下：Python3中用input，Python2中用row_input，都输入为str
+3>:
+   整除:(没有太大影响)（Python3中/表示真除，%表示取余，//表示地板除（结果取整）；Python2中/表示根据除数被除数小数点位得到结果，//同样表示地板除）统一一下：Python3中/表示真除，%表示取余，//结果取整；Python2中带上小数点/表示真除，%表示取余，//结果取整
