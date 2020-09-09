@@ -11,3 +11,14 @@ python manage.py startapp appName
 	python manage.py makemigrations appname(生成数据移植文件)
 	python manage.py migrate(移植到数据库)
 	python manage.py createsuperuser(建立管理员用户)
+
+
+创建虚拟环境：
+mkvirtualenv 虚拟环境名字 -p python3
+	例:mkvirtualenv django_env - p python3
+	
+虚拟环境:
+mkvirtualenv # 创建虚拟环境
+rmvirtualenv # 删除虚拟环境
+workon # 查看所有虚拟环境和切换虚拟环境
+deactivate # 退出当前虚拟环境
