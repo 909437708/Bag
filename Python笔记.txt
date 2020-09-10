@@ -4,3 +4,4 @@ pip install 下载文件慢的解决方案：
 	pip install django -i https://mirrors.aliyun.com/pypi/simple/(阿里云镜像)
 	pip install django -i http://pypi.douban.com/simple/(豆瓣镜像)
 	
+	
