@@ -1,5 +1,13 @@
-1.Django2.0和以后的版本不再支持Python2.X
-2.form.as_xxx
+1：Django2.0和以后的版本不再支持Python2.X
+2：form.as_xxx
 	form.as_p/{{ form.as_table }}/{{ form.as_ul }}#这是一个模板变量
 	Django 自动创建显示表单所需要的全部字段
 	修饰符as_p让Django以字段格式渲染所有的表单元素，这是一种整洁的显示表单的简单方式
+on_delete=models.CASCADE)
+3：{%csrf_token%}的作用（用于跨站请求伪造保护）
+	提交数据的时候就会做安全机制，当你点击提交的时候会出现一个forbbiddon
+	的错误，就是用setting配置里的scrf做安全机制的，那么我们可以吧它给注释了，，，
+	或者在form表单下面添加一个{% csrf_token %},,,
+	这才是真正解决的办法，注释不是解决的办法
+4：admin.site.register(models_name)
+	声明要管理的模型类
