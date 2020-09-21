@@ -9,5 +9,7 @@ on_delete=models.CASCADE)
 	的错误，就是用setting配置里的scrf做安全机制的，那么我们可以吧它给注释了，，，
 	或者在form表单下面添加一个{% csrf_token %},,,
 	这才是真正解决的办法，注释不是解决的办法
-4：admin.site.register(models_name)
-	声明要管理的模型类
+4：admin.site.register(注册Article模型)
+	注册Article模型
+5：obj.tags.all/obj.tags.all()
+	obj.tags.all方法仅限于在模板中使用，在admin或view中使用时，千万别忘了加括号。
