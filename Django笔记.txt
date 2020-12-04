@@ -13,3 +13,4 @@ on_delete=models.CASCADE)
 	注册Article模型
 5：obj.tags.all/obj.tags.all()
 	obj.tags.all方法仅限于在模板中使用，在admin或view中使用时，千万别忘了加括号。
+6：migrate 命令只会为在 INSTALLED_APPS 里声明了的应用进行数据库迁移。
